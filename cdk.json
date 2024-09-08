@@ -1,5 +1,5 @@
 {
-  "app": "npx ts-node --prefer-ts-exts bin/monolithic-lambdas.ts",
+  "app": "npx ts-node --prefer-ts-exts lib/monolithic-lambdas.ts",
   "watch": {
     "include": [
       "**"
@@ -17,6 +17,7 @@
     ]
   },
   "context": {
+    "region": "us-east-1",
     "@aws-cdk/aws-lambda:recognizeLayerVersion": true,
     "@aws-cdk/core:checkSecretUsage": true,
     "@aws-cdk/core:target-partitions": [
